@@ -1,9 +1,9 @@
-.box30 {
+.box {
   margin: 2em 0;
   background: #f1f1f1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
 }
-.box30 .box-title {
+.box .box-title {
   font-size: 1.2em;
   background: #5fc2f5;
   padding: 4px;
@@ -12,7 +12,7 @@
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.box30 p {
+.box p {
   padding: 15px 20px;
   margin: 0;
 }
