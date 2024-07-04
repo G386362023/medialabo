@@ -7,21 +7,16 @@
     <script src="weather.js" defer></script>
   </head>
   <body>
-    <!-- <div class="box" style="width: 500px;height: 250px;margin: 0 auto;">
-      <div class="box-title">世界の天気（検索結果1件）</div>
-      <ul>
-        <li>緯度: 116.3972</li>
-        <li>経度: 39.9075</li>
-        <li>天気: 曇りがち</li>
-        <li>最高気温: 9.94</li>
-        <li>最低気温: 9.94</li>
-        <li>湿度: 14</li>
-        <li>都市名: 北京市</li>
-      </ul>
-    </div> -->
     <div id="result">
       <div class="box" style="width: 500px;height: 250px;margin: 0 auto;">
-        <div class="box-title">世界の天気（検索結果1件）</div>
+        <div class="box-title">世界の天気
+          <label for="city">都市</label>
+          <select name="city" id="city">
+            <option value="">都市名</option>
+            <option value="beijing">北京市</option>
+          </select>
+          <button id="btn">検索</button>
+        </div>
         <ul id="list"></ul>
       </div>
     </div>

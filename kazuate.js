@@ -14,17 +14,14 @@ let p1 = document.querySelector('p#result');
 let r = document.createElement('r');
 
 // 予想を4回実行する
-// 将来以下の hantei(); の4回の呼び出しを全て削除する
-// 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-hantei();
-// hantei();
-// hantei();
-// hantei();
+let b = document.querySelector('#print');
+b.addEventListener('click', hantei);
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
-  // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = 4;
+
+  let i = document.querySelector('input[name="kazu"]');
+  let yoso = i.value;
 
   kaisu++;
 
