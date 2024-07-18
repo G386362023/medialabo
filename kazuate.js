@@ -22,6 +22,7 @@ function hantei() {
 
   let i = document.querySelector('input[name="kazu"]');
   let yoso = i.value;
+  Number(yoso);
 
   kaisu++;
 
@@ -36,25 +37,22 @@ function hantei() {
   if(kaisu>3){
     console.log("答えは "+kotae+" でした．すでにゲームは終わっています");
     r.textContent = "答えは "+kotae+" でした．すでにゲームは終わっています";
-    p1.insertAdjacentElement('afterbegin', r);
   }else if(kotae==yoso){
     console.log("正解です．おめでとう!");
     r.textContent = "正解です．おめでとう!";
-    p1.insertAdjacentElement('afterbegin', r);
     kaisu=kaisu+2;
   }else if(kaisu==3){
     console.log("まちがい．残念でした答えは"+kotae+" です．");
-    r.textContent = "まちがい．残念でした答えは"+kotae+" です．";
-    p1.insertAdjacentElement('afterbegin', r);
+    r.textContent = "まちがい．残念でした答えは"+kotae+" です．";;
   }else if(kotae<yoso){
     console.log("まちがい．答えはもっと小さいですよ");
     r.textContent = "まちがい．答えはもっと小さいですよ";
-    p1.insertAdjacentElement('afterbegin', r);
   }else if(kotae>yoso){
     console.log("まちがい．答えはもっと大きいですよ");
     r.textContent = "まちがい．答えはもっと大きいですよ";
-    p1.insertAdjacentElement('afterbegin', r);
   }
+  
+  p1.insertAdjacentElement('afterbegin', r);
   
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
