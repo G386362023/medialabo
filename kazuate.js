@@ -13,7 +13,7 @@ let a = document.createElement('a');
 let p1 = document.querySelector('p#result');
 let r = document.createElement('r');
 
-// 予想を4回実行する
+// ボタン
 let b = document.querySelector('#print');
 b.addEventListener('click', hantei);
 
@@ -25,12 +25,10 @@ function hantei() {
   Number(yoso);
 
   kaisu++;
-
   console.log(kaisu+"回目の予想: "+yoso);
   //4-1:
   k.textContent = kaisu;
   s1.insertAdjacentElement('afterbegin', k);
-
   a.textContent = yoso;
   s2.insertAdjacentElement('afterbegin', a);
 
@@ -51,10 +49,6 @@ function hantei() {
     console.log("まちがい．答えはもっと大きいですよ");
     r.textContent = "まちがい．答えはもっと大きいですよ";
   }
-  
   p1.insertAdjacentElement('afterbegin', r);
   
-  // 課題3-1: 正解判定する
-  // kotae と yoso が一致するかどうか調べて結果を出力
-  // 課題3-1における出力先はコンソール
 }

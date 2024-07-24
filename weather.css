@@ -1,5 +1,4 @@
 .box {
-  margin: 2em 0;
   background: #f1f1f1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
 }
@@ -12,19 +11,3 @@
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.box p {
-  padding: 15px 20px;
-  margin: 0;
-}
-
-a:link {
-    color: pink;
-  }
-  
-  a:visited {
-    color: rgb(217, 58, 169);
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
